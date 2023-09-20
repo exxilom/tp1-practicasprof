@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gráfico Vectorial</title>
+</head>
+<body>
+    <h1>Gráfico Vectorial</h1>
+    <p>Puedes adivinar que es?</p>
+    <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Cuerpo del león (un óvalo) -->
+        <ellipse cx="150" cy="150" rx="80" ry="120" fill="orange" />
+
+        <!-- Cabeza del león (un círculo) -->
+        <circle cx="150" cy="80" r="60" fill="orange" />
+
+        <!-- Ojos (dos círculos con detalles) -->
+        <circle cx="130" cy="70" r="10" fill="white" />
+        <circle cx="170" cy="70" r="10" fill="white" />
+        <!-- Detalles de los ojos -->
+        <circle cx="135" cy="70" r="3" fill="black" />
+        <circle cx="175" cy="70" r="3" fill="black" />
+
+        <!-- Nariz (un triángulo) -->
+        <polygon points="150,80 145,90 155,90" fill="black" />
+
+        <!-- Boca (una línea curva) -->
+        <path d="M140 100 Q150 120 160 100" fill="none" stroke="black" stroke-width="2" />
+
+        <!-- Orejas (dos óvalos) -->
+        <ellipse cx="110" cy="50" rx="15" ry="30" fill="orange" />
+        <ellipse cx="190" cy="50" rx="15" ry="30" fill="orange" />
+    </svg>
+    <br>
+    <br>
+    <p>Escribe en la caja de texto que crees que es:</p>
+    <form action="x" method="post">
+        <label for="descripcion">Describe la imagen:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <a href="index.html" target="_self"> Inicio </a>
+</body>
+</html>
